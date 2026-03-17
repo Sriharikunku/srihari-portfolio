@@ -526,3 +526,355 @@
 
     .cert-label {
       font-weight: 500;
+  }
+
+  /* MEDIA QUERIES */
+  @media (max-width: 960px) {
+    .layout-hero {
+      grid-template-columns: 1fr;
+    }
+    .nav-links {
+      display: none;
+    }
+    .hero-stats-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .exp-item {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .stack-grid,
+    .impact-grid,
+    .cert-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 560px) {
+    .stack-grid,
+    .impact-grid,
+    .cert-grid {
+      grid-template-columns: 1fr;
+    }
+    .pill-list {
+      flex-direction: column;
+    }
+  }
+</style>
+
+</head>
+<body>
+<div class="page">
+
+  <!-- NAVBAR -->
+  <nav class="nav shell">
+    <div class="nav-left">
+      <div class="avatar-circle">S</div>
+      <span class="nav-name">Srihari Kunku</span>
+    </div>
+    <div class="nav-links">
+      <a href="#stack">STACK</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#impact">IMPACT</a>
+      <a href="#certs">CERTS</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+    <div class="nav-right">
+      <a href="mailto:sriharikunku01@gmail.com" class="btn-primary">
+        &#9993; HIRE ME
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="layout-hero shell">
+    <div class="hero-left">
+      <div class="badge-row">
+        <span class="pill-open"><span class="pill-open-dot"></span>OPEN TO WORK</span>
+        <span class="pill-location">BENGALURU, INDIA</span>
+      </div>
+      <h1 class="hero-title">Srihari<br>Kunku</h1>
+      <p class="hero-subtitle">Lead SQL Database Administrator &amp; Azure Cloud Specialist &middot; 8+ Years</p>
+      <p class="hero-meta">
+        I build &amp; optimize enterprise SQL Server estates &amp; Azure cloud data platforms — delivering 99.99% uptime, automating with PowerShell &amp; dbatools, and migrating to Azure with zero downtime.
+      </p>
+      <div class="hero-tags">
+        <span class="tag-tech">SQL Server</span>
+        <span class="tag-tech">Azure SQL</span>
+        <span class="tag-tech">PowerShell</span>
+        <span class="tag-tech">Always On</span>
+        <span class="tag-tech">dbatools</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#experience" class="btn-primary">VIEW EXPERIENCE</a>
+        <a href="https://linkedin.com/in/srihari-kunku" target="_blank" class="link-ghost">LINKEDIN &#8599;</a>
+      </div>
+    </div>
+    <!-- HERO STATS GRID -->
+    <div class="hero-stats-grid" style="grid-column: 1 / -1;">
+      <div class="stat-card">
+        <div class="stat-value">99.99%</div>
+        <div class="stat-label">Uptime Delivered</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">40+ / 100+</div>
+        <div class="stat-label">Instances / Databases</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">20%</div>
+        <div class="stat-label">Cost Reduction</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">30%</div>
+        <div class="stat-label">Automation Gains</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO RIGHT CARD -->
+  <div class="hero-right shell" style="margin-top: -32px;">
+    <div class="hero-right-header">
+      <span class="hero-right-name">Srihari Kunku</span>
+      <span class="hero-right-badge">Microsoft Certified</span>
+    </div>
+    <div class="mini-metrics">
+      <div class="mini-card">
+        <div class="mini-value">99.99%</div>
+        <div class="mini-caption">Production Uptime Maintained</div>
+      </div>
+      <div class="mini-card">
+        <div class="mini-value">20%</div>
+        <div class="mini-caption">Azure Infrastructure Cost Saved</div>
+      </div>
+      <div class="mini-card">
+        <div class="mini-value">30%</div>
+        <div class="mini-caption">Manual Work Eliminated via Automation</div>
+      </div>
+      <div class="mini-card">
+        <div class="mini-value">45%</div>
+        <div class="mini-caption">Query Performance Improved</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STACK SECTION -->
+  <section id="stack" class="shell">
+    <div class="section-label">01 &mdash; STACK</div>
+    <h2 class="section-title">Technology</h2>
+    <div class="card">
+      <div class="stack-grid">
+        <div class="stack-col">
+          <h3>&#127969; Data Platforms</h3>
+          <div class="pill-list">
+            <span class="pill">SQL Server</span>
+            <span class="pill">Azure SQL DB</span>
+            <span class="pill">Azure SQL Managed Instance</span>
+            <span class="pill">Elastic Pools</span>
+            <span class="pill">MySQL</span>
+          </div>
+        </div>
+        <div class="stack-col">
+          <h3>&#128747; HA / DR</h3>
+          <div class="pill-list">
+            <span class="pill">Always On AG</span>
+            <span class="pill">Failover Clusters</span>
+            <span class="pill">Log Shipping</span>
+            <span class="pill">Replication</span>
+            <span class="pill">Backup/Restore</span>
+          </div>
+        </div>
+        <div class="stack-col">
+          <h3>&#128187; Automation</h3>
+          <div class="pill-list">
+            <span class="pill">PowerShell</span>
+            <span class="pill">dbatools</span>
+            <span class="pill">T-SQL</span>
+            <span class="pill">SQL Agent Jobs</span>
+            <span class="pill">SSIS</span>
+          </div>
+        </div>
+        <div class="stack-col">
+          <h3>&#9729; Cloud</h3>
+          <div class="pill-list">
+            <span class="pill">Microsoft Azure</span>
+            <span class="pill">Azure Monitor</span>
+            <span class="pill">Azure Data Factory</span>
+            <span class="pill">Azure Backup</span>
+            <span class="pill">Infrastructure as Code</span>
+          </div>
+        </div>
+        <div class="stack-col">
+          <h3>&#128200; Performance</h3>
+          <div class="pill-list">
+            <span class="pill">Query Tuning</span>
+            <span class="pill">Index Optimization</span>
+            <span class="pill">Execution Plan Analysis</span>
+            <span class="pill">Extended Events</span>
+            <span class="pill">DMVs</span>
+          </div>
+        </div>
+        <div class="stack-col">
+          <h3>&#128274; Security</h3>
+          <div class="pill-list">
+            <span class="pill">TDE</span>
+            <span class="pill">SQL Security</span>
+            <span class="pill">Azure Security Center</span>
+            <span class="pill">Access Control</span>
+            <span class="pill">Auditing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="shell">
+    <div class="section-label">02 &mdash; EXPERIENCE</div>
+    <h2 class="section-title">Career</h2>
+    <div class="card">
+      <div class="exp-timeline">
+
+        <div class="exp-item">
+          <div>
+            <div class="exp-role">Lead SQL Database Administrator &middot; Cloud Automation Expert</div>
+            <div class="exp-meta">Wipro &middot; Nov 2021 &ndash; Present &middot; Bengaluru, India</div>
+            <div class="exp-badges">
+              <span class="exp-badge">PowerShell</span>
+              <span class="exp-badge">Azure</span>
+              <span class="exp-badge">Always On AG</span>
+              <span class="exp-badge">dbatools</span>
+            </div>
+          </div>
+          <div class="exp-details">
+            <ul>
+              <li>Maintain &amp; optimize 40+ SQL Server instances, 100+ databases, 100+ TB ensuring 99.99% production uptime</li>
+              <li>Led Azure cloud migration achieving 20% infrastructure cost reduction with zero downtime</li>
+              <li>Automated backups, monitoring &amp; reporting using PowerShell and dbatools, reducing manual workload by 30%</li>
+              <li>Designed HA/DR solutions: Always On AGs, Log Shipping, Replication, Geo-replication for global clients</li>
+              <li>Mentored junior DBAs on Azure, PowerShell scripting, and performance troubleshooting</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div>
+            <div class="exp-role">SQL Database Administrator &middot; High Availability &amp; Performance</div>
+            <div class="exp-meta">GlobalLogic &middot; Nov 2017 &ndash; Nov 2021 &middot; India</div>
+            <div class="exp-badges">
+              <span class="exp-badge">SQL Server 2000-2019</span>
+              <span class="exp-badge">Clustering</span>
+              <span class="exp-badge">SSIS</span>
+              <span class="exp-badge">SSRS</span>
+            </div>
+          </div>
+          <div class="exp-details">
+            <ul>
+              <li>Supported 40+ SQL Server instances and 100+ databases, managing patching, upgrades, and migrations</li>
+              <li>Automated SSIS &amp; SSRS job monitoring, cutting incident resolution time by 25%</li>
+              <li>Implemented complex failover clusters, performed troubleshooting, disk expansion &amp; capacity planning</li>
+              <li>Orchestrated DR drills reducing RTO &amp; RPO for production environments</li>
+              <li>Led SQL Server upgrades and performance tuning, query optimization &amp; security hardening</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT SECTION -->
+  <section id="impact" class="shell">
+    <div class="section-label">03 &mdash; IMPACT</div>
+    <h2 class="section-title">By The Numbers</h2>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <div class="impact-value">99.99%</div>
+        <div>Production Uptime Maintained</div>
+        <div class="impact-desc">WIPRO &middot; ENTERPRISE SQL ESTATES</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-value">20%</div>
+        <div>Infrastructure Cost Reduction</div>
+        <div class="impact-desc">AZURE SQL MIGRATION &middot; ZERO DOWNTIME</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-value">30%</div>
+        <div>Manual Work Eliminated</div>
+        <div class="impact-desc">POWERSHELL &amp; DBATOOLS AUTOMATION</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-value">45%</div>
+        <div>Query Performance Improved</div>
+        <div class="impact-desc">INDEX TUNING &amp; EXECUTION PLAN ANALYSIS</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-value">40+ / 100+</div>
+        <div>Instances &amp; Databases Managed</div>
+        <div class="impact-desc">ENTERPRISE-SCALE SQL SERVER ESTATES</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-value">100+</div>
+        <div>Databases Migrated &amp; Optimized</div>
+        <div class="impact-desc">ZERO CRITICAL FAILURES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTS SECTION -->
+  <section id="certs" class="shell">
+    <div class="section-label">04 &mdash; CREDENTIALS</div>
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-pill">
+        <span class="cert-label">Microsoft Certified &mdash; Azure Fundamentals</span>
+        <span>&#127942;</span>
+      </div>
+      <div class="cert-pill">
+        <span class="cert-label">SQL Server Database Administration</span>
+        <span>&#127942;</span>
+      </div>
+      <div class="cert-pill">
+        <span class="cert-label">PowerShell for SQL Server Administration</span>
+        <span>&#128640;</span>
+      </div>
+      <div class="cert-pill">
+        <span class="cert-label">Automating SQL Server with dbatools</span>
+        <span>&#128187;</span>
+      </div>
+      <div class="cert-pill">
+        <span class="cert-label">Microsoft Copilot for Azure SQL Database</span>
+        <span>&#129302;</span>
+      </div>
+      <div class="cert-pill">
+        <span class="cert-label">Complete MySQL Database Administration</span>
+        <span>&#128421;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="shell">
+    <div class="section-label">05 &mdash; CONTACT</div>
+    <h2 class="section-title">Let&#39;s build something great</h2>
+    <div class="card" style="text-align: center; padding: 40px 22px;">
+      <p style="font-size: 14px; color: var(--muted); margin-bottom: 24px;">
+        Open to SQL Server DBA roles, Azure cloud positions, and consulting opportunities — in India and globally.
+      </p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+        <a href="mailto:sriharikunku01@gmail.com" class="btn-primary">EMAIL ME</a>
+        <a href="https://linkedin.com/in/srihari-kunku" target="_blank" class="btn-primary" style="background: linear-gradient(135deg, #0077b5, #00a0dc);">LINKEDIN</a>
+        <a href="tel:+916303043972" class="btn-primary" style="background: linear-gradient(135deg, #22c55e, #16a34a);">CALL ME</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="shell" style="text-align: center; padding: 40px 20px; font-size: 12px; color: var(--muted); border-top: 1px solid rgba(148, 163, 184, 0.15); margin-top: 64px;">
+  <p>&copy; 2026 Srihari Kunku &middot; Lead SQL Database Administrator &middot; Bengaluru, India</p>
+  <p style="margin-top: 8px;">sriharikunku01@gmail.com &middot; +91 63030 43972</p>
+</footer>
+
+</body>
+</html>
